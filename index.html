@@ -3,106 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aodhan Mansell | Portfolio</title>
+    <title>Aodhan O’Donnell | Software Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; color: #212529; line-height: 1.6; }
-        .hero { padding: 120px 0 80px; background: #ffffff; }
-        .nav-link { font-weight: 500; color: #555 !important; }
-        .project-card { border: 1px solid #eee; border-radius: 12px; transition: 0.3s; height: 100%; }
-        .project-card:hover { border-color: #000; transform: translateY(-5px); }
-        .badge-tech { background: #f0f0f0; color: #444; font-weight: 500; margin-right: 5px; }
-        footer { background: #f9f9f9; padding: 50px 0; }
-        .btn-github { background: #24292e; color: white; border-radius: 8px; }
-        .btn-github:hover { background: #000; color: white; }
+        body { font-family: 'Inter', sans-serif; color: #212529; }
+        .hero { padding: 100px 0 60px; background: #fff; }
+        .section-title { font-weight: 800; letter-spacing: -1px; margin-bottom: 30px; }
+        .card { border: 1px solid #eee; border-radius: 12px; transition: 0.3s; }
+        .card:hover { border-color: #000; }
+        .badge-skill { background: #f0f0f0; color: #444; font-weight: 500; margin: 2px; }
+        .exp-meta { font-size: 0.9rem; color: #6c757d; }
     </style>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">AODHAN.</a>
+            <a class="navbar-brand fw-bold" href="#">AODHAN O’DONNELL</a>
             <div class="ms-auto">
-                <a href="https://github.com/aodhanman" class="btn btn-github btn-sm" target="_blank">GitHub Profile</a>
+                <a href="https://linkedin.com/in/aodhanman" class="text-dark me-3 text-decoration-none small">LinkedIn</a>
+                <a href="mailto:aodmanager2026@gmail.com" class="btn btn-dark btn-sm">Contact Me</a>
             </div>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="container text-center">
-            <h1 class="display-2 fw-800 mb-3">Software Developer & Python Enthusiast</h1>
-            <p class="lead text-muted mx-auto" style="max-width: 700px;">
-                Building automation tools, interactive games, and efficient backend solutions. 
-                Focused on clean code and solving real-world problems through Python.
-            </p>
-            <div class="mt-4">
-                <span class="badge badge-tech p-2 px-3">Python</span>
-                <span class="badge badge-tech p-2 px-3">Pandas</span>
-                <span class="badge badge-tech p-2 px-3">Web Scraping</span>
-                <span class="badge badge-tech p-2 px-3">Tkinter</span>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-3">Junior Software Developer</h1>
+                    <p class="lead text-muted mb-4">
+                        Competent in Java, Python, JS AI Technologies and Android Development. 
+                        Currently completing a Postgraduate Diploma in Artificial Intelligence.
+                    </p>
+                    <div>
+                        <span class="badge badge-skill p-2">Python</span>
+                        <span class="badge badge-skill p-2">Java</span>
+                        <span class="badge badge-skill p-2">Cloud-Native</span>
+                        <span class="badge badge-skill p-2">CI/CD</span>
+                        <span class="badge badge-skill p-2">Machine Learning</span>
+                        <span class="badge badge-skill p-2">Spring Boot</span>
+                        <span class="badge badge-skill p-2">JavaScript</span>
+
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="fw-bold mb-5">Selected Work</h2>
+            <h2 class="section-title">Experience</h2>
             <div class="row g-4">
-                
-                <div class="col-md-4">
-                    <div class="card project-card p-4">
-                        <h4 class="fw-bold">Coffee Machine Simulator</h4>
-                        <p class="small text-muted">An OOP-based logic system managing resources, payments, and drink recipes.</p>
-                        <div class="mt-auto">
-                            <span class="badge badge-tech">Python</span>
-                            <span class="badge badge-tech">OOP</span>
-                            <hr>
-                            <a href="https://github.com/aodm26/coffee-machine" class="text-dark fw-bold text-decoration-none">View Code →</a>
+                <div class="col-12">
+                    <div class="card p-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h4 class="fw-bold mb-0">Software Trainee Developer</h4>
+                                <p class="text-primary mb-2">GlobalLogic</p>
+                            </div>
+                            <span class="exp-meta">Oct 2024 – Oct 2025</span>
                         </div>
+                        <ul>
+                            <li>Contributed to telecommunications software within an Agile Scrum team.</li>
+                            <li>Implemented unit tests for key components and supported CI/CD automation.</li>
+                            <li>Worked with containerized microservices and cloud infrastructure</li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card project-card p-4">
-                        <h4 class="fw-bold">Secure Password Manager</h4>
-                        <p class="small text-muted">A desktop application built with Tkinter for generating and storing encrypted credentials.</p>
-                        <div class="mt-auto">
-                            <span class="badge badge-tech">Tkinter</span>
-                            <span class="badge badge-tech">JSON</span>
-                            <hr>
-                            <a href="https://github.com/aodhanman" class="text-dark fw-bold text-decoration-none">View Code →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card project-card p-4">
-                        <h4 class="fw-bold">Snake Game</h4>
-                        <p class="small text-muted">A classic implementation using the Turtle graphics library with high-score tracking.</p>
-                        <div class="mt-auto">
-                            <span class="badge badge-tech">Turtle</span>
-                            <span class="badge badge-tech">Game Dev</span>
-                            <hr>
-                            <a href="https://github.com/aodm26/snake-game" class="text-dark fw-bold text-decoration-none">View Code →</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container text-center">
-            <h3 class="fw-bold mb-4">Let's Connect</h3>
-            <p class="text-muted">Currently open to new projects and collaborations.</p>
-            <div class="d-flex justify-content-center gap-3 mt-4">
-                <a href="https://github.com/aodhanman" class="text-dark">GitHub</a>
-                <a href="mailto:your-email@example.com" class="text-dark">Email</a>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                        <h5>Deep Learning X-Ray Analysis</h5>
+                        <p class="small text-muted">A CNN-based system to detect cardiomegaly in digital X-ray images.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                        <h5>Music Industry Trend Prediction</h5>
+                        <p class="small text-muted">Cloud-based AI system using IGN review data to forecast industry trends.</p>
+                        <a href="https://github.com/aodhanman/IGNDATA" class="text-muted">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                        <h5>Android App (Google Play)</h5>
+                        <p class="small text-muted">Designed, built, and successfully published a functional app to the Play Store.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 p-4">
+                        <h5>Spring Boot Watchlist</h5>
+                        <p class="small text-muted">A basic Spring Boot application for managing personal watchlists.</p>
+                    </div>
+                </div>
             </div>
-            <p class="mt-5 x-small text-secondary">© 2026 Aodhan Mansell</p>
         </div>
+    </section>
+
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-white">Education & Certs</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-1 fw-bold">Postgraduate Diploma in AI</p>
+                    <p class="small text-secondary">Chevron College | Graduating Oct 2026 </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-1 fw-bold">BSc Computing in Software Development</p>
+                    <p class="small text-secondary">GMIT | 2021 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 border-top">
+        <div class="container text-center small text-muted">
+            <a href="https://github.com/aodm26" class="text-muted">GitHub</a>
+            © 2026 Aodhan O’Donnell • <a href="https://github.com/aodhanman" class="text-muted">GitHub</a>
+
+        </div>  
     </footer>
 
 </body>
