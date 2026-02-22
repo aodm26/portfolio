@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aodhan Mansell | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #212529; line-height: 1.6; }
+        .hero { padding: 120px 0 80px; background: #ffffff; }
+        .nav-link { font-weight: 500; color: #555 !important; }
+        .project-card { border: 1px solid #eee; border-radius: 12px; transition: 0.3s; height: 100%; }
+        .project-card:hover { border-color: #000; transform: translateY(-5px); }
+        .badge-tech { background: #f0f0f0; color: #444; font-weight: 500; margin-right: 5px; }
+        footer { background: #f9f9f9; padding: 50px 0; }
+        .btn-github { background: #24292e; color: white; border-radius: 8px; }
+        .btn-github:hover { background: #000; color: white; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">AODHAN.</a>
+            <div class="ms-auto">
+                <a href="https://github.com/aodhanman" class="btn btn-github btn-sm" target="_blank">GitHub Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container text-center">
+            <h1 class="display-2 fw-800 mb-3">Software Developer & Python Enthusiast</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                Building automation tools, interactive games, and efficient backend solutions. 
+                Focused on clean code and solving real-world problems through Python.
+            </p>
+            <div class="mt-4">
+                <span class="badge badge-tech p-2 px-3">Python</span>
+                <span class="badge badge-tech p-2 px-3">Pandas</span>
+                <span class="badge badge-tech p-2 px-3">Web Scraping</span>
+                <span class="badge badge-tech p-2 px-3">Tkinter</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold mb-5">Selected Work</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                    <div class="card project-card p-4">
+                        <h4 class="fw-bold">Coffee Machine Simulator</h4>
+                        <p class="small text-muted">An OOP-based logic system managing resources, payments, and drink recipes.</p>
+                        <div class="mt-auto">
+                            <span class="badge badge-tech">Python</span>
+                            <span class="badge badge-tech">OOP</span>
+                            <hr>
+                            <a href="https://github.com/aodm26/coffee-machine" class="text-dark fw-bold text-decoration-none">View Code →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card project-card p-4">
+                        <h4 class="fw-bold">Secure Password Manager</h4>
+                        <p class="small text-muted">A desktop application built with Tkinter for generating and storing encrypted credentials.</p>
+                        <div class="mt-auto">
+                            <span class="badge badge-tech">Tkinter</span>
+                            <span class="badge badge-tech">JSON</span>
+                            <hr>
+                            <a href="https://github.com/aodhanman" class="text-dark fw-bold text-decoration-none">View Code →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card project-card p-4">
+                        <h4 class="fw-bold">Snake Game</h4>
+                        <p class="small text-muted">A classic implementation using the Turtle graphics library with high-score tracking.</p>
+                        <div class="mt-auto">
+                            <span class="badge badge-tech">Turtle</span>
+                            <span class="badge badge-tech">Game Dev</span>
+                            <hr>
+                            <a href="https://github.com/aodm26/snake-game" class="text-dark fw-bold text-decoration-none">View Code →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <h3 class="fw-bold mb-4">Let's Connect</h3>
+            <p class="text-muted">Currently open to new projects and collaborations.</p>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <a href="https://github.com/aodhanman" class="text-dark">GitHub</a>
+                <a href="mailto:your-email@example.com" class="text-dark">Email</a>
+            </div>
+            <p class="mt-5 x-small text-secondary">© 2026 Aodhan Mansell</p>
+        </div>
+    </footer>
+
+</body>
+</html>
