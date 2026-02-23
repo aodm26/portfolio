@@ -143,25 +143,63 @@
         </div>
     </section>
 
-    <section class="py-5 bg-navy text-white">
-        <div class="container">
-            <h2 class="section-title text-white">Education</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <p class="mb-1 fw-bold">Postgrad Diploma in AI</p>
-                    <p class="small text-secondary">Chevron College | Oct 2026</p>
+    <style>
+    .bg-navy { background-color: #0a192f; }
+    .edu-card {
+        padding-left: 1.5rem;
+        border-left: 2px solid rgba(255,255,255,0.1);
+        transition: 0.3s;
+    }
+    .edu-card:hover {
+        border-left: 2px solid #64ffda; /* High-contrast accent color */
+    }
+    .edu-date {
+        color: #8892b0;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .edu-title {
+        color: #ccd6f6;
+        font-size: 1.1rem;
+        margin-bottom: 2px;
+    }
+    .edu-inst {
+        color: #64ffda;
+        font-size: 0.95rem;
+    }
+</style>
+
+<section class="py-5 bg-navy text-white">
+    <div class="container py-4">
+        <h2 class="section-title text-white mb-5">Education & Academic Background</h2>
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div class="edu-card">
+                    <div class="edu-date mb-2">Expected Oct 2026</div>
+                    <h5 class="edu-title fw-bold">Postgrad Diploma in AI</h5>
+                    <p class="edu-inst mb-0">Chevron College</p>
                 </div>
-                <div class="col-md-4">
-                    <p class="mb-1 fw-bold">BSc Software Development</p>
-                    <p class="small text-secondary">GMIT | 2021</p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="edu-card">
+                    <div class="edu-date mb-2">Class of 2021</div>
+                    <h5 class="edu-title fw-bold">BSc Software Development</h5>
+                    <p class="edu-inst mb-0">GMIT (ATU Galway)</p>
                 </div>
-                <div class="col-md-4">
-                    <p class="mb-1 fw-bold">Advanced Software Dev Cert</p>
-                    <p class="small text-secondary">GTI | 2017</p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="edu-card">
+                    <div class="edu-date mb-2">Completed 2017</div>
+                    <h5 class="edu-title fw-bold">Advanced Software Dev</h5>
+                    <p class="edu-inst mb-0">Galway Technical Institute</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <footer class="py-5 border-top">
         <div class="container text-center small text-muted">
