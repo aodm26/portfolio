@@ -10,10 +10,12 @@
         body { font-family: 'Inter', sans-serif; color: #212529; }
         .hero { padding: 100px 0 60px; background: #fff; }
         .section-title { font-weight: 800; letter-spacing: -1px; margin-bottom: 30px; }
-        .card { border: 1px solid #eee; border-radius: 12px; transition: 0.3s; }
-        .card:hover { border-color: #000; }
+        .card { border: 1px solid #eee; border-radius: 12px; transition: 0.3s; display: flex; flex-direction: column; }
+        .card:hover { border-color: #000; transform: translateY(-5px); }
         .badge-skill { background: #f0f0f0; color: #444; font-weight: 500; margin: 2px; }
         .exp-meta { font-size: 0.9rem; color: #6c757d; }
+        .project-link { font-weight: 600; text-decoration: none; color: #0d6efd; font-size: 0.9rem; }
+        .project-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -22,7 +24,7 @@
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">AODHAN O’DONNELL</a>
             <div class="ms-auto">
-                <a href="https://linkedin.com/in/aodhanman" class="text-dark me-3 text-decoration-none small">LinkedIn</a>
+                <a href="https://linkedin.com/in/aodhanman" class="text-dark me-3 text-decoration-none small" target="_blank">LinkedIn</a>
                 <a href="mailto:aodmanager2026@gmail.com" class="btn btn-dark btn-sm">Contact Me</a>
             </div>
         </div>
@@ -34,41 +36,40 @@
                 <div class="col-lg-8">
                     <h1 class="display-3 fw-bold mb-3">Junior Software Developer</h1>
                     <p class="lead text-muted mb-4">
-                        Competent in Java, Python, JS AI Technologies and Android Development. 
+                        Experienced in Cloud Technologies, AI, and Android Development. 
                         Currently completing a Postgraduate Diploma in Artificial Intelligence.
                     </p>
-                    <div>
+                    <div class="d-flex flex-wrap">
                         <span class="badge badge-skill p-2">Python</span>
                         <span class="badge badge-skill p-2">Java</span>
-                        <span class="badge badge-skill p-2">Cloud-Native</span>
-                        <span class="badge badge-skill p-2">CI/CD</span>
-                        <span class="badge badge-skill p-2">Machine Learning</span>
+                        <span class="badge badge-skill p-2">C# / Unity</span>
                         <span class="badge badge-skill p-2">Spring Boot</span>
-                        <span class="badge badge-skill p-2">JavaScript</span>
-
+                        <span class="badge badge-skill p-2">CI/CD</span>
+                        <span class="badge badge-skill p-2">Docker</span>
+                        <span class="badge badge-skill p-2">Machine Learning</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light border-top border-bottom">
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="row g-4">
                 <div class="col-12">
                     <div class="card p-4">
-                        <div class="d-flex justify-content-between align-items-start">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap">
                             <div>
                                 <h4 class="fw-bold mb-0">Software Trainee Developer</h4>
                                 <p class="text-primary mb-2">GlobalLogic</p>
                             </div>
                             <span class="exp-meta">Oct 2024 – Oct 2025</span>
                         </div>
-                        <ul>
+                        <ul class="mt-2">
                             <li>Contributed to telecommunications software within an Agile Scrum team.</li>
                             <li>Implemented unit tests for key components and supported CI/CD automation.</li>
-                            <li>Worked with containerized microservices and cloud infrastructure</li>
+                            <li>Worked with containerized microservices and cloud infrastructure.</li>
                         </ul>
                     </div>
                 </div>
@@ -81,55 +82,95 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="card h-100 p-4">
-                        <h5>Deep Learning X-Ray Analysis</h5>
-                        <p class="small text-muted">A CNN-based system to detect cardiomegaly in digital X-ray images.</p>
+                    <div class="card h-100 p-4 border-primary shadow-sm">
+                        <div class="d-flex justify-content-between mb-2">
+                            <h5 class="fw-bold">Unity 3D Game</h5>
+                            <span class="badge bg-primary text-white">C#</span>
+                        </div>
+                        <p class="small text-muted flex-grow-1">A fully realized 3D game environment built in Unity.</p>
+                        <a href="https://github.com/aodhanman/ThirdYearProject" target="_blank" class="project-link">View Repository →</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card h-100 p-4">
-                        <h5>Music Industry Trend Prediction</h5>
-                        <p class="small text-muted">Cloud-based AI system using IGN review data to forecast industry trends.</p>
-                        <a href="https://github.com/aodhanman/IGNDATA" class="text-muted">View on GitHub</a>
+                        <div class="d-flex justify-content-between mb-2">
+                            <h5 class="fw-bold">Aster2: Space Shooter</h5>
+                            <span class="badge bg-dark">Three.js</span>
+                        </div>
+                        <p class="small text-muted flex-grow-1">A browser-based space shooter engine developed using Three.js and JavaScript.</p>
+                        <a href="https://github.com/aodm26/Aster2/tree/main" target="_blank" class="project-link">View Repository →</a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card h-100 p-4">
-                        <h5>Android App (Google Play)</h5>
-                        <p class="small text-muted">Designed, built, and successfully published a functional app to the Play Store.</p>
+                        <h5 class="fw-bold">Game Industry Prediction</h5>
+                        <p class="small text-muted flex-grow-1">System using IGN data to forecast trends.</p>
+                        <a href="https://github.com/aodhanman/IGNDATA" target="_blank" class="project-link">View on GitHub →</a>
+                    </div>
+                </div>
+               <div class="col-md-6">
+                <div class="card h-100 p-4">   
+                    <div class="d-flex justify-content-between align-items-center mb-2">  
+                        <h5 class="fw-bold mb-0">Deep Learning X-Ray Analysis</h5>
+                        <span class="badge bg-dark">Python</span>
+                    </div>
+                    <p class="small text-muted flex-grow-1">A CNN-based system to detect cardiomegaly in digital X-ray images using a baseline architecture.</p>
+                    <a href="#" class="project-link mt-auto">View Details →</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="card p-4 border-success shadow-sm">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold mb-0">Streaming Watchlist</h5>
+                            <span class="badge bg-success">Spring Boot</span>
+                        </div>
+                        <p class="small text-muted flex-grow-1">A full-stack application built with Spring Boot for managing and tracking personal media content and streaming lists.</p>
+                        <a href="https://github.com/aodm26/StreamingApplication" target="_blank" class="project-link mt-auto">View Repository →</a>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card h-100 p-4">
-                        <h5>Spring Boot Watchlist</h5>
-                        <p class="small text-muted">A basic Spring Boot application for managing personal watchlists.</p>
+                    <div class="card h-100 p-4 border-info shadow-sm">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold mb-0">Rent vs. Income Analysis</h5>
+                            <span class="badge bg-info text-dark">Python / Data Vis</span>
+                        </div>
+                        <p class="small text-muted flex-grow-1">A comprehensive data visualization project analyzing the relationship between rent prices, housing costs, and average income over time.</p>
+                        <a href="https://github.com/aodm26/rent" target="_blank" class="project-link mt-auto">View Visualisation Project →</a>
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
-    <section class="py-5 bg-dark text-white">
+    <section class="py-5 bg-navy text-white">
         <div class="container">
-            <h2 class="section-title text-white">Education & Certs</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="mb-1 fw-bold">Postgraduate Diploma in AI</p>
-                    <p class="small text-secondary">Chevron College | Graduating Oct 2026 </p>
+            <h2 class="section-title text-white">Education</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <p class="mb-1 fw-bold">Postgrad Diploma in AI</p>
+                    <p class="small text-secondary">Chevron College | Oct 2026</p>
                 </div>
-                <div class="col-md-6">
-                    <p class="mb-1 fw-bold">BSc Computing in Software Development</p>
-                    <p class="small text-secondary">GMIT | 2021 </p>
+                <div class="col-md-4">
+                    <p class="mb-1 fw-bold">BSc Software Development</p>
+                    <p class="small text-secondary">GMIT | 2021</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="mb-1 fw-bold">Advanced Software Dev Cert</p>
+                    <p class="small text-secondary">GTI | 2017</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-4 border-top">
+    <footer class="py-5 border-top">
         <div class="container text-center small text-muted">
-            <a href="https://github.com/aodm26" class="text-muted">GitHub</a>
-            © 2026 Aodhan O’Donnell • <a href="https://github.com/aodhanman" class="text-muted">GitHub</a>
+            <div class="mb-3">
+                <a href="https://github.com/aodm26" class="text-muted mx-2 text-decoration-none" target="_blank">Current GitHub</a>
+                <a href="https://github.com/aodhanman" class="text-muted mx-2 text-decoration-none" target="_blank">Project Archive</a>
 
+            </div>
+            <p>© 2026 Aodhan O’Donnell </p>
         </div>  
     </footer>
 
